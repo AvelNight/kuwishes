@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>kuwishes</title>
+    <meta name="description" content="Доска желаний — следи за мечтами, отмечай активные и сбывшиеся." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="hero">
+      <img
+        class="hero__media"
+        src="images/hero.jpg"
+        alt=""
+        fetchpriority="high"
+      />
+      <div class="hero__veil"></div>
+      <div class="hero__content">
+        <p class="brand">kuwishes</p>
+        <h1>Доска желаний</h1>
+        <p class="lede">Картинки, за которыми хочется идти. Активные горят — сбывшиеся остаются с нами.</p>
+        <a class="cta" href="#board">Смотреть желания</a>
+      </div>
+    </header>
+
+    <main id="board" class="board">
+      <div class="board__bar">
+        <div class="stats" id="stats" aria-live="polite"></div>
+        <div class="filters" role="tablist" aria-label="Фильтр">
+          <button class="filter is-on" data-filter="all" type="button">Все</button>
+          <button class="filter" data-filter="active" type="button">Активные</button>
+          <button class="filter" data-filter="dream" type="button">Мечты</button>
+          <button class="filter" data-filter="done" type="button">Сбылось</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+    </main>
+
+    <dialog class="lightbox" id="lightbox">
+      <form method="dialog">
+        <button class="lightbox__close" type="submit" aria-label="Закрыть">×</button>
+      </form>
+      <img id="lightbox-img" alt="" />
+      <div class="lightbox__meta">
+        <h2 id="lightbox-title"></h2>
+        <p id="lightbox-note"></p>
+        <span class="pill" id="lightbox-status"></span>
+      </div>
+    </dialog>
+
+    <script src="js/wishes.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
