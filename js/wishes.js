@@ -160,4 +160,11 @@ window.WISHES = [
     status: "dream",
     note: "",
   },
+  {
+    id: "beach-picnic",
+    title: "Ужин на берегу моря на коврике с вином и пиццей на закате",
+    image: "images/beach-picnic.jpg",
+    status: "dream",
+    note: "",
+  },
 ];
