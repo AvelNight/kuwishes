@@ -17,7 +17,7 @@ window.WISHES = [
     id: "money-is-coming",
     title: "Много денег",
     image: "images/money-is-coming.jpg",
-    status: "dream",
+    status: "active",
     note: "",
   },
   {
@@ -150,7 +150,7 @@ window.WISHES = [
     id: "discipline",
     title: "Discipline",
     image: "images/discipline.jpg",
-    status: "dream",
+    status: "active",
     note: "",
   },
   {
