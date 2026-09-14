@@ -167,4 +167,18 @@ window.WISHES = [
     status: "dream",
     note: "",
   },
+  {
+    id: "komodo",
+    title: "Национальный парк Комодо",
+    image: "images/komodo.jpg",
+    status: "dream",
+    note: "",
+  },
+  {
+    id: "ocean-spa",
+    title: "Спа на берегу океана",
+    image: "images/ocean-spa.jpg",
+    status: "dream",
+    note: "",
+  },
 ];
